@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --primary-color: rgba(0, 0, 0, 1);
+    --primary-white-color: rgba(255, 255, 255, 1);
+    --primary-red-color: rgba(255, 142, 142, 1);
+    --primary-green-color: rgba(149, 204, 181, 1);
+
+    --border-black-thick: 2px solid var(--primary-color);
+    --border-grey-thin: 1px solid rgba(68, 68, 68, 0.2);
+}

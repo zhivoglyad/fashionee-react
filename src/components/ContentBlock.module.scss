@@ -1,0 +1,154 @@
+.pageHeaderWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 150px;
+
+    @media screen and (max-width: 1820px) {
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        gap: 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+        align-items: start;
+    }
+
+    @media screen and (max-width: 480px) {
+        gap: 40px;
+    }
+}
+
+.pageHeaderMenu {
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 322px;
+    position: relative;
+
+    @media screen and (max-width: 1440px) {
+        max-width: 600px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        max-width: 500px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        max-width: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 300px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-width: 220px;
+        gap: 12px;
+    }
+}
+
+.pageInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 111px 0 0 390px;
+
+    @media screen and (max-width: 1200px) {
+        padding: 111px 0 0 320px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 111px 0 0 220px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 30px 0 0 100px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 30px 0 0 45px;
+        gap: 7px;
+    }
+}
+
+.title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    color: var(--primary-color);
+
+    @media screen and (max-width: 480px) {
+        font-size: 65px;
+    }
+}
+
+.menuItems {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+        gap: 10px;
+    }
+}
+
+.menuItem {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.active,
+.menuItem:hover {
+    color: var(--primary-red-color);
+}
+
+.lineDecoration {
+    border-bottom: var(--border-black-thick);
+}
+
+.pointsHeaderDecoration {
+    position: absolute;
+    left: 60px;
+
+    @media screen and (max-width: 1024px) {
+        left: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.photoHeader {
+    background-color: rgba(241, 242, 243, 1);
+    width: 800px;
+    height: 400px;
+
+    @media screen and (max-width: 1440px) {
+        width: 600px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 500px;
+        height: 330px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 350px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
