@@ -1,5 +1,5 @@
 import styles from './Shop.module.scss'
-import { useMemo } from 'react'
+import { useMemo, useEffect } from 'react'
 import Pagination from './Pagination'
 import SortAndCount from './SortAndCount'
 import ProductsList from './ProductsList'
@@ -19,6 +19,10 @@ const ProductsArea = (props) => {
     const [activePage, setActivePage] = useLocalStorage('activePage', 1);
 
     const [sortType, setSortType] = useLocalStorage('sortType', 'RELEVANCE');
+
+    useEffect(() => {
+        setActivePage(1);
+    }, [products]);
 
     const handleChangeSort = (value) => {
         setSortType(value);
